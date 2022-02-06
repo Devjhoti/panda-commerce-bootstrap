@@ -10,12 +10,14 @@
     <!-- bootstrap stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Custom CSS Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
             <div class="container">
                 <a class="navbar-brand" href="#">
 
@@ -33,27 +35,33 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#categories">Categories</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#backpacks">Backpack</a>
                         </li>
 
+
                         <li class="nav-item">
-                            <a class="nav-link disabled">Subscribe</a>
+                            <a class="nav-link " href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </nav>
+        <!-- navbar ends  -->
+
         <!-- image slider -->
-        <section class="container">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <section class="container  my-5  ">
+            <div id="carouselExampleControls" class="carousel slide section-1 " data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item  active">
-                        <div class="row p-5 d-flex align-items-center bg-info bg-gradient ">
-                            <div class="col-lg-7">
+                        <div class="row p-5 d-flex align-items-center custom-bg-info bg-gradient  ">
+                            <div class="col-lg-7 col-md-6">
                                 <h1>Cool Dude Headphones</h1>
                                 <p class="">
                                     This is the best headphone in the world for people who just want to waste time in
@@ -62,9 +70,9 @@
                                 <h1>
                                     $420
                                 </h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="btn custom-btn-warning">Buy Now</button>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 col-md-6">
                                 <img src="/images/banner-images/headphone.png" class="d-block w-100" alt="...">
                             </div>
 
@@ -72,8 +80,8 @@
                         </div>
                     </div>
                     <div class="carousel-item  ">
-                        <div class="row p-5 d-flex align-items-center bg-info bg-gradient ">
-                            <div class="col-lg-7">
+                        <div class="row p-5 d-flex align-items-center custom-bg-info bg-gradient ">
+                            <div class="col-lg-7 col-md-6">
                                 <h1>Mega LCD TV For Sports
                                 </h1>
                                 <p class="">
@@ -85,9 +93,9 @@
                                 <h1>
                                     $1200
                                 </h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="btn custom-btn-warning">Buy Now</button>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 col-md-6">
                                 <img src="/images/banner-images/tv.png" class="d-block w-100" alt="...">
                             </div>
 
@@ -95,8 +103,8 @@
                         </div>
                     </div>
                     <div class="carousel-item  ">
-                        <div class="row p-5 d-flex align-items-center bg-info bg-gradient ">
-                            <div class="col-lg-7">
+                        <div class="row p-5 d-flex align-items-center custom-bg-info bg-gradient ">
+                            <div class="col-lg-7 col-md-6">
                                 <h1>X-Box for your living room
                                 </h1>
                                 <p class="">
@@ -108,9 +116,9 @@
                                 <h1>
                                     $600
                                 </h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="btn custom-btn-warning">Buy Now</button>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 col-md-6">
                                 <img src="/images/banner-images/xbox.png" class="d-block w-100" alt="...">
                             </div>
 
@@ -136,7 +144,8 @@
     <!-- Header Ends -->
 
     <main>
-        <section class="container my-5 ">
+        <!-- categories section  -->
+        <section class="container my-5 " id="categories">
             <div class="row g-4">
                 <div class="col-12 col-lg-4 col-md-6">
                     <div class="p-3 d-flex align-items-center justify-content-between bg-warning rounded-3 ">
@@ -150,8 +159,8 @@
                         <img src="/images/categories/bag.png" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-md-6 ">
-                    <div class="p-3 d-flex align-items-center justify-content-between bg-primary rounded-3 ">
+                <div class="col-12 col-lg-4 col-md-12 ">
+                    <div class="p-3 d-flex align-items-center justify-content-center bg-primary rounded-3 ">
                         <h1 class="text-white">Shoes</h1>
                         <img src="/images/categories/shoes.png" alt="">
                     </div>
@@ -161,7 +170,8 @@
 
             </div>
         </section>
-        <section class="container my-5">
+        <!-- shoes section  -->
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
                 <div class="col">
@@ -173,7 +183,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning rounded-3 text-white">Buy Now >> </button>
+                            <button class="btn custom-btn-warning rounded-3 text-white">Buy Now >> </button>
                         </div>
                     </div>
                 </div>
@@ -186,12 +196,12 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning rounded-3 text-white">Buy Now >></button>
+                            <button class="btn custom-btn-warning rounded-3 text-white">Buy Now >></button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 border-0 shadow-lg">
+                <div class="col-md-12">
+                    <div class="card h-100 border-0 shadow-lg ">
                         <img src="/images/shoes/shoe-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
@@ -200,14 +210,14 @@
                                 height action.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn btn-warning text-white rounded-3">Buy Now >></div>
+                            <div class="btn btn custom-btn-warning text-white rounded-3">Buy Now >></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="container my-5">
+        <!-- backpacks section  -->
+        <section class="container my-5" id="backpacks">
             <h2>Backpacks</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
                 <div class="col">
@@ -219,7 +229,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning rounded-3 text-white">Buy Now >> </button>
+                            <button class="btn custom-btn-warning rounded-3 text-white">Buy Now >> </button>
                         </div>
                     </div>
                 </div>
@@ -232,11 +242,11 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning rounded-3 text-white">Buy Now >></button>
+                            <button class="btn custom-btn-warning rounded-3 text-white">Buy Now >></button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-12">
                     <div class="card h-100 border-0 shadow-lg">
                         <img src="/images/bags/bag-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -246,15 +256,27 @@
                                 height action.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn btn-warning text-white rounded-3">Buy Now >></div>
+                            <div class="btn btn custom-btn-warning text-white rounded-3">Buy Now >></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Subscribe Section  -->
+        <section class="container d-flex align-items-center justify-content-center my-5  custom-bg-info py-5 section-1" id="subscribe">
+            <div>
+                <h1 class="text-secondary">
+                    LET'S STAY IN TOUCH
+                </h1>
+                <P>Get updates on sales, specials and more</P>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="cool@awesome.com" >
+                <br>
+                <div class="btn custom-btn-warning text-white rounded-3">Submit</div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <p class="text-center"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
 
 
